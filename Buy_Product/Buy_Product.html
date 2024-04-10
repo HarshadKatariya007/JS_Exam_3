@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book Store</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Book Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto gap-2">
+            <li class="nav-item rounded">
+              <a class="nav-link active" aria-current="page" href="../index.html"><i class="bi bi-house-fill me-2"></i>Home</a>
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link" href="../Buy_Product/Buy_Product.html"><i class="bi bi-people-fill me-2"></i>Add Book Products</a>
+            </li>
+            <li class="nav-item rounded">
+              <a class="nav-link" href="../Book_Buy/Book_Buy.html"><i class="bi bi-telephone-fill me-2"></i>Buy Book</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+      <div class="container mx-auto mt-5">
+         <form id="Buy_Pro">
+         <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="book_title" placeholder="Enter Book Title">
+            <label for="floatingInput">Book Title</label>
+          </div>
+          <div class="form-floating">
+            <select class="form-select" id="book_category" aria-label="Floating label select example">
+              <option selected>Select Book Category</option>
+              <option value="Comics">Comics</option>
+              <option value="Computers">Computers</option>
+              <option value="Kids">Kids</option>
+              <option value="Sports">Sports</option>
+            </select>
+            <label for="floatingSelect">Book Category</label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="url" class="form-control" id="book_image" placeholder="Enter Book URL">
+            <label for="floatingInput">Book Image URL</label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="book_price" placeholder="Enter Book Price">
+            <label for="floatingInput">Book Price</label>
+          </div>
+          <div class="col-auto">
+            <input type="submit" value="Add Book" class="btn btn-primary mb-3">
+          </div>
+         </form>
+      </div>
+</body>
+<script src="./js/Buy_Products.js"></script>
+</html>
